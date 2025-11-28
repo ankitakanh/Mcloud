@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid'
 
 // ** Demo Components Imports
 import UserViewLeft from 'src/views/dashboards/staff/View/StaffViewLeft'
-// src/views/apps/user/view/UserViewLeft
 import UserViewRight from 'src/views/dashboards/staff/View/StaffViewRight'
 
 const UserView = ({ tab, invoiceData }) => {

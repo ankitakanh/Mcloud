@@ -31,7 +31,7 @@ const ALL_ROLES = ['User', ...CRM_ROLES, ...SUPPLY_ROLES]
 // === Colors & style constants ===
 const PRIMARY_INDIGO = '#787EFF'
 const LIGHT_INDIGO = '#6f78ff'
-const BORDER_GREY = '#bcbcbc85' // ← all borders use this now
+const BORDER_GREY = '#bcbcbc85'
 
 // header & row heights (tweak if needed)
 const HEADER_TOP_HEIGHT = 56

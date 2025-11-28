@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid'
 
 // ** Demo Components Imports
 import UserViewLeft from 'src/views/dashboards/loginAuditTrails/View/LoginATViewLeft'
-// src/views/apps/user/view/UserViewLeft
 
 const UserView = ({ tab, invoiceData }) => {
   return (

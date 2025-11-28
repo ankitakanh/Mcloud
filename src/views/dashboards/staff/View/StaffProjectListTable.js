@@ -305,15 +305,23 @@ const InvoiceListTable = () => {
 
   return (
     <Card>
-      <CardHeader title='Quotes List' />
-      <CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', mb: 1 }}>
-          <Typography variant='body2' sx={{ mr: 2 }}>
-            Search:
-          </Typography>
-          <TextField size='small' placeholder='Search Quote' value={value} onChange={e => setValue(e.target.value)} />
-        </Box>
-      </CardContent>
+      <CardHeader
+        title={
+          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+            <Typography variant='h6'>Quotes List</Typography>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Typography variant='body2'>Search:</Typography>
+              <TextField
+                size='small'
+                placeholder='Search Quote'
+                value={value}
+                onChange={e => setValue(e.target.value)}
+              />
+            </Box>
+          </Box>
+        }
+      />
 
       {loading && <LinearProgress />}
 
@@ -348,27 +356,6 @@ const InvoiceListTable = () => {
           }}
         />
       </Box>
-
-      {/* Debug: show JSON so you can confirm the rows exist */}
-      {/* <Box sx={{ p: 2 }}>
-        <Typography variant='caption' sx={{ display: 'block', mb: 1 }}>
-          Debug: data array (should show 7 objects)
-        </Typography>
-        <Box
-          component='pre'
-          sx={{
-            maxHeight: 160,
-            overflow: 'auto',
-            background: theme.palette.background.paper,
-            border: `1px solid ${theme.palette.divider}`,
-            p: 1,
-            borderRadius: 1,
-            fontSize: '0.75rem'
-          }}
-        >
-          {JSON.stringify(data, null, 2)}
-        </Box>
-      </Box> */}
     </Card>
   )
 }

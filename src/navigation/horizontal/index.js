@@ -19,47 +19,10 @@ const navigation = () => {
           title: 'eCommerce',
           path: '/dashboards/ecommerce'
         },
-
         {
           icon: 'mdi:account-outline',
           title: 'Staff',
           path: '/dashboards/staff/list'
-          // icon: 'mdi:account-outline',
-          // children: [
-          //   {
-          //     title: 'All Staff',
-          //     path: '/dashboards/staff/list'
-          //   },
-          //   // {
-          //   //   title: 'More Details',
-          //   //   children: [
-          //   //     {
-          //   //       title: 'Overview',
-          //   //       path: '/dashboards/staff/view/overview'
-          //   //     },
-          //   //     // {
-          //   //     //   title: 'Security',
-          //   //     //   path: '/dashboards/staff/view/security'
-          //   //     // },
-          //   //     {
-          //   //       title: 'Roles',
-          //   //       path: '/dashboards/staff/view/billing-plan'
-          //   //     },
-          //   //     {
-          //   //       title: 'Associated Contacts',
-          //   //       path: '/dashboards/staff/view/notification'
-          //   //     },
-          //   //     {
-          //   //       title: 'Permissions',
-          //   //       path: '/dashboards/staff/view/connection'
-          //   //     },
-          //   //     {
-          //   //       title: 'Credentials',
-          //   //       path: '/dashboards/staff/view/security'
-          //   //     }
-          //   //   ]
-          //   // }
-          // ]
         },
         {
           icon: 'mdi:arrow-down-drop-circle-outline',
@@ -70,6 +33,11 @@ const navigation = () => {
           icon: 'mdi:account-clock-outline',
           title: 'Login Audit Trails',
           path: '/dashboards/loginAuditTrails/list'
+        },
+        {
+          icon: 'mdi:new-box',
+          title: `What's New`,
+          path: '/dashboards/whatsNew/list'
         }
       ]
     },

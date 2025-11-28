@@ -48,9 +48,7 @@ const UserViewRight = ({ tab, invoiceData }) => {
     setActiveTab(value)
     router
       .push({
-        // pathname: `/apps/user/view/${value.toLowerCase()}`
         pathname: `/dashboards/staff/view/${value.toLowerCase()}`
-        // src/views/dashboards/staff/View/
       })
       .then(() => setIsLoading(false))
   }
@@ -75,13 +73,13 @@ const UserViewRight = ({ tab, invoiceData }) => {
         aria-label='forced scroll tabs example'
         sx={{ borderBottom: theme => `1px solid ${theme.palette.divider}` }}
       >
-        <Tab value='overview' label='Overview' icon={<Icon icon='mdi:account-outline' />} />
+        <Tab value='overview' label='Overview' icon={<Icon icon='mdi:account-details-outline' />} />
         {/* <Tab value='security' label='Security' icon={<Icon icon='mdi:lock-outline' />} /> */}
         <Tab value='billing-plan' label='Roles' icon={<Icon icon='mdi:bookmark-outline' />} />
-        <Tab value='notification' label='Associated Contacts' icon={<Icon icon='mdi:bell-outline' />} />
+        <Tab value='notification' label='Associated Contacts' icon={<Icon icon='mdi:account-multiple-outline' />} />
         <Tab value='connection' label='Permissions' icon={<Icon icon='mdi:link-variant' />} />
         <Tab value='security' label='Credentials' icon={<Icon icon='mdi:lock-outline' />} />
-        <Tab value='activities' label='Notification & Acivities' icon={<Icon icon='mdi:account-outline' />} />
+        <Tab value='activities' label='Notification & Acivities' icon={<Icon icon='mdi:bell-badge-outline' />} />
         {/*++++++++++++++++++++++++++++++++++++++++++++*/}
       </TabList>
       <Box sx={{ mt: 6 }}>

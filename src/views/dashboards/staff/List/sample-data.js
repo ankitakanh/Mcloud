@@ -1,4 +1,3 @@
-// src/views/dashboards/staff/List/sample-data.js
 const sampleRows = [
   {
     id: 1,
